@@ -1,0 +1,54 @@
+
+body, h2, form {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana; 
+}
+
+/* Center align form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border:  #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; 
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+

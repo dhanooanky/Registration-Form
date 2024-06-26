@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration Form</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h2>User Registration Form</h2>
+    <form id="registrationForm" action="submit_form.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <input type="description" id="description" name="description"></textarea>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" name="dateofbirth"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education">
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="Degree">Degree</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Post graduate">Post graduate</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+        
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (name.trim() === '') {
+                alert('Name must be filled out');
+                return false;
+            }
+
+            if (email.trim() === '') {
+                alert('Email must be filled out');
+                return false;
+            }
+
+           
+
+            return true;
+        }
+    </script>
+</body>
+</html>
